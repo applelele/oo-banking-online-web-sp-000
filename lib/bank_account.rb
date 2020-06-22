@@ -6,8 +6,12 @@ class BankAccount
     @status = status
   end
 
-  def deposit
-    
+  def deposit(amount)
+    @balance += amount
+  end
+
+  def display_balance
+    puts "Your balance is $#{@balance}."
   end
 
 end
